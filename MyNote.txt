@@ -15,7 +15,7 @@ class MahfuzBhuiyan
         System.Console.WriteLine("Welcome to C# Program");
     }
 }
----------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
 // Write, WriteLine, ReadKey, Clear
 class MahfuzBhuiyan
 {
@@ -34,8 +34,8 @@ class MahfuzBhuiyan
         System.Console.WriteLine("Thank You");
     }
 }
------------------------------------------------------------------------------------------------------------
-// Variables 
+---------------------------------------------------------------------------
+// Basics of Variables
 class MahfuzBhuiyan
 {
     static void Main()
@@ -46,8 +46,8 @@ class MahfuzBhuiyan
         System.Console.Write("My name is " + nameOfStudent + " and I am " + ageOfStudent);
     }
 }
--------------------------------------------------------------------------------------------------------------
-//Find Max Value of Data Type
+----------------------------------------------------------------------------
+//Find Max Capacity of Data Type
 class MahfuzBhuiyan
 {
     static void Main()
@@ -60,6 +60,6 @@ class MahfuzBhuiyan
     }
 }
 
--------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------
 
 
