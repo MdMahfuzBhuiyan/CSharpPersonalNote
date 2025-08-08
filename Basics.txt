@@ -1,4 +1,8 @@
-/* As C# is OOP based Language,It needs a class to run the program.2nd one is Main() 
+-------------------------------------------------------------------------------------------
+**Introduction**
+-------------------------------------------------------------------------------------------
+
+As C# is OOP based Language,It needs a class to run the program.2nd one is Main() 
 method which is also very importat to run the program, If we click "Run" the CLR first finds 
 the Main() method then other execution flow will start. Without Main() it can't run.As the 
 rules,the Main() should always void it dosent return any value.Also static Cz In Main method
@@ -7,7 +11,7 @@ space which is the part of BCL. Inside namespace there is a pre defined class an
 the Class there is pre defined method which receives value as argument and show the output.
 Therefore the Console class is also static Cz we dont need to create object to run the class.
 also The method which is WriteLine also static
-*/
+
 class MahfuzBhuiyan
 {
     static void Main()
@@ -16,7 +20,9 @@ class MahfuzBhuiyan
     }
 }
 --------------------------------------------------------------------------------------------
-// Write, WriteLine, ReadKey, Clear
+Write, WriteLine, ReadKey, Clear
+--------------------------------------------------------------------------------------------
+
 class MahfuzBhuiyan
 {
     static void Main()
@@ -35,7 +41,10 @@ class MahfuzBhuiyan
     }
 }
 --------------------------------------------------------------------------------------------
-// Basics of Variables
+Variables
+--------------------------------------------------------------------------------------------
+
+// Declarition of Variables
 class MahfuzBhuiyan
 {
     static void Main()
@@ -46,8 +55,8 @@ class MahfuzBhuiyan
         System.Console.Write("My name is " + nameOfStudent + " and I am " + ageOfStudent);
     }
 }
---------------------------------------------------------------------------------------------
-//Find Max Capacity of Data Type
+
+//Find Max Capacity of Data Types
 class MahfuzBhuiyan
 {
     static void Main()
@@ -60,6 +69,5 @@ class MahfuzBhuiyan
     }
 }
 
---------------------------------------------------------------------------------------------
 
 
