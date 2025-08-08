@@ -1,1 +1,65 @@
-Welcome!
+/* As C# is OOP based Language,It needs a class to run the program.2nd one is Main() 
+method which is also very importat to run the program, If we click "Run" the CLR first finds 
+the Main() method then other execution flow will start. Without Main() it can't run.As the 
+rules,the Main() should always void it dosent return any value.Also static Cz In Main method
+when CLR starts they can't create the object for the Main Class. System is Pre defined Name
+space which is the part of BCL. Inside namespace there is a pre defined class and also In 
+the Class there is pre defined method which receives value as argument and show the output.
+Therefore the Console class is also static Cz we dont need to create object to run the class.
+also The method which is WriteLine also static
+*/
+class MahfuzBhuiyan
+{
+    static void Main()
+    {
+        System.Console.WriteLine("Welcome to C# Program");
+    }
+}
+---------------------------------------------------------------------------------------------------------
+// Write, WriteLine, ReadKey, Clear
+class MahfuzBhuiyan
+{
+    static void Main()
+    {
+        // Goes to next line after printing
+        System.Console.WriteLine("Assalamualaikum");
+        // Only prints
+        System.Console.Write("Welcome to My"); 
+        System.Console.Write(" World");
+        // Stops the program & wait for a key to run again from the start
+        System.Console.ReadKey();
+        // Clears the Console App & We will not see the upper part , Cz cleared but code
+        // executed Succesfully
+        System.Console.Clear(); 
+        System.Console.WriteLine("Thank You");
+    }
+}
+-----------------------------------------------------------------------------------------------------------
+// Variables 
+class MahfuzBhuiyan
+{
+    static void Main()
+    {
+	// local vairable Cz declared in the method
+        string nameOfStudent = "Mahfuz";
+        int ageOfStudent = 23;
+        System.Console.Write("My name is " + nameOfStudent + " and I am " + ageOfStudent);
+    }
+}
+-------------------------------------------------------------------------------------------------------------
+//Find Max Value of Data Type
+class MahfuzBhuiyan
+{
+    static void Main()
+    {
+        // To check that Maximum capacity of this Datatype
+        // MaxValue is not local varible Cz it not decleard in the method 
+        // value is local, but MaxValue is a field from the int data type.(int is a struct )
+        int value = int.MaxValue; 
+        System.Console.WriteLine(value);
+    }
+}
+
+-------------------------------------------------------------------------------------------------------
+
+
