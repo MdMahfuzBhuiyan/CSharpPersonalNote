@@ -52,7 +52,7 @@ class MahfuzBhuiyan
 	// local vairable Cz declared in the method
         string nameOfStudent = "Mahfuz";
         int ageOfStudent = 23;
-        System.Console.Write("My name is " + nameOfStudent + " and I am " + ageOfStudent);
+        System.Console.Write("My name is " + nameOfStudent + " and I am " + ageOfStudent); // returns as String
     }
 }
 
@@ -69,5 +69,192 @@ class MahfuzBhuiyan
     }
 }
 
+----------------------------------------------------------------------------------------------
+Operators
+----------------------------------------------------------------------------------------------
+
+// Arithmetic Operator 
+
+class CodeExamples
+{
+    static void Main()
+    {
+        int num = 45, num2 = 10;
+        double divison = num * 1.0 / num2; // Type Casting
+        System.Console.WriteLine(num + num2);
+        System.Console.WriteLine(num - num2);
+        System.Console.WriteLine(divison);
+        System.Console.WriteLine(num % num2);
+    }
+}
+
+// Assingment Operator 
+
+class CodeExamples
+{
+    static void Main()
+    {
+        int num1, num2;
+        num1 = 10; num2 = 20;
+        num1 += 10; num2 -= 10;
+        num1 *= 2; num2 *= 2;
+        num1 /= 1; num2 *= 1;
+        num1 %= 1; num2 %= 1;
+        System.Console.WriteLine(num1);
+        System.Console.WriteLine(num2);
+    }
+}
 
 
+// Pre increament , Post increament
+
+class CodeExamples
+{
+    static void Main()
+    {
+        int num = 20;
+        num++; // num =  21
+        ++num; // num = 22
+        num = num++; // num = 22 , Though num increases to 23 in memory but is Overwrites and assinged 22
+        num = ++num; // num = 23
+        num += 1; // num = 24
+        System.Console.WriteLine(num++); // prints 24 , but increases to 25
+        System.Console.WriteLine(num++); // prints 25, but increases to 26
+
+    }
+}
+
+// Comparison and logical operator
+
+class CodeExamples
+{
+    static void Main()
+    {
+        int num = 20, num2 = 10;
+        bool res = num == num2 || num > num2;
+        bool res2  = num != num2 && num >= num2;
+        bool res3 = num > num2 ^ num != num2; // XOR
+        System.Console.WriteLine(res);
+        System.Console.WriteLine(res2);
+        System.Console.WriteLine(res3);
+    }
+}
+
+// Concatination operator
+class CodeExamples
+{
+    static void Main()
+    {
+        int num = 20, num2 = 10;
+        string name = "Mahfuz", name2 = "Akif";
+        System.Console.WriteLine(name + name2); // returns As String
+        System.Console.WriteLine("Hello Moto" + num ); // returns As String
+        System.Console.WriteLine(name + num); // returns As String
+        System.Console.WriteLine(num + num2); // But this one is Addition
+    }
+}
+
+// Ternary  operator
+class CodeExamples
+{
+    static void Main()
+    {
+        // First we need a varibale to store the data
+        int num = 20, num2 = 30;
+        string res = (num > num2) ? "YES" : "NO";
+        System.Console.WriteLine(res);
+    }
+}
+
+----------------------------------------------------------------------------------------------
+Control Statements
+----------------------------------------------------------------------------------------------
+
+// Simple if
+
+class CodeExamples
+{
+    static void Main()
+    {
+        int myNumber = 45;
+        if (myNumber > 40)
+        {
+            System.Console.WriteLine("Congratulations! You've passed the exam");
+        }
+    }
+}
+
+// if - else
+class CodeExamples
+{
+    static void Main()
+    {
+        int myNumber = 35;
+        if (myNumber > 40)
+        {
+            System.Console.WriteLine("Congratulations! You've passed the exam");
+        }
+        else
+        {
+            System.Console.WriteLine("You've failed");
+        }
+    }
+}
+
+
+// if -  else if
+class CodeExamples
+{
+    static void Main()
+    {
+        int siam = 39;
+        if(siam >= 80)
+        {
+            System.Console.WriteLine("Siam got A+");
+        }
+        else if(siam >= 65)
+        {
+            System.Console.WriteLine("Siam got A");
+        }
+        else if(siam >= 40)
+        {
+            System.Console.WriteLine("Siam got B");
+        }
+        else
+        {
+            System.Console.WriteLine("Siam failed");
+        }
+    }
+}
+
+
+// Nested if
+
+class CodeExamples
+{
+    static void Main()
+    {
+        int id = 22201013;
+        double cgpa = 3.0;
+        if(id == 22201013)
+        {
+            if(cgpa == 4.0)
+            {
+                System.Console.WriteLine("You got first Division");
+            }
+            else if(cgpa > 3.0)
+            {
+                System.Console.WriteLine("You got 2nd Division");
+            }
+            else
+            {
+                System.Console.WriteLine("You got third divsion");
+            }
+        }
+        else
+        {
+            System.Console.WriteLine("Invalid Id");
+        }
+
+    }
+}
