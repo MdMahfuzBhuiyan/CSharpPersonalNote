@@ -281,6 +281,12 @@ string name = Console.ReadLine();
 // String Concatination only output as string , even if we use int or other data types
 Console.WriteLine("Hi " + name);
 
+// Convert String to int while User input (Only Whole or integer number not double, float or other numbers)
+int num1 = int.Parse(Console.ReadLine());
+Console.WriteLine($"Your number is {num1}");
+
+
+
 
 
 
