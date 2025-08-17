@@ -70,6 +70,17 @@ class MahfuzBhuiyan
 }
 
 ----------------------------------------------------------------------------------------------
+Interpolated String
+----------------------------------------------------------------------------------------------
+
+Console.WriteLine("Enter Your Name");
+// To store the input we need a varibale which is string , Cz C# only can get string input 
+string name = Console.ReadLine(); 
+
+Console.WriteLine($"Hi {name}"); // Interpolated String
+
+
+----------------------------------------------------------------------------------------------
 Operators
 ----------------------------------------------------------------------------------------------
 
@@ -258,3 +269,22 @@ class CodeExamples
 
     }
 }
+
+----------------------------------------------------------------------------------------------
+User Input
+----------------------------------------------------------------------------------------------
+
+// Basic User input
+Console.WriteLine("Enter Your Name");
+// To store the input we need a varibale which is string , Cz C# only can get string input 
+string name = Console.ReadLine(); 
+// String Concatination only output as string , even if we use int or other data types
+Console.WriteLine("Hi " + name);
+
+
+
+
+
+
+
+

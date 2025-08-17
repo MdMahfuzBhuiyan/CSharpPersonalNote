@@ -1,0 +1,4 @@
+# Reasonable Varibale Name 
+# Proper Method Name 
+# Comments( Methods/Functions should have Comments to state their workings )
+# XML Documentation Comments
