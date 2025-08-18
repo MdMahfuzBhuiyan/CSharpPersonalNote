@@ -221,7 +221,7 @@ class CodeExamples
     }
 }
 
-// Comparison and logical operator
+// Comparison and logical operator( && || !)
 
 class CodeExamples
 {
@@ -274,7 +274,7 @@ class CodeExamples
     static void Main()
     {
         int myNumber = 45;
-        if (myNumber > 40)
+        if (myNumber > 40) // It returns "true" if the condition is true , then executes the block
         {
             System.Console.WriteLine("Congratulations! You've passed the exam");
         }
@@ -355,5 +355,68 @@ class CodeExamples
 
     }
 }
+
+// One Line if else Statements
+
+
+int month = int.Parse(Console.ReadLine());
+if(month == 1)
+{
+    Console.WriteLine("January\nWelcome to Home"); //if we need multiple works
+    month++;
+}
+else if(month == 2)
+    Console.WriteLine("February"); // if single line work
+
+else if(month == 3)
+    Console.WriteLine("March");
+ 
+
+
+// Switch Statement (switch, case, break, deafult)
+// One Statement Multiple Cases 
+int month = int.Parse(Console.ReadLine());
+string monthName;
+
+switch (month)
+{
+    case 1:
+        monthName = "January";
+        break;
+
+    case 2:
+        monthName = "February";
+        break;
+
+    default:
+        monthName = "Next time";
+        break;
+}
+if(month <= 2)
+    Console.WriteLine("The Month is {0}",monthName);
+else
+    Console.WriteLine("Next time!");
+
+//(Uses when multiples dicticnt options , Enum types)
+
+
+
+----------------------------------------------------------------------------------------------
+Methods
+----------------------------------------------------------------------------------------------
+
+Trim() ----> Removes first and last white spaces from string like "  Mahfuz   " to "Mahfuz"
+TrimStart() --> Removes first white spaces from string like "  Mahfuz" to "Mahfuz"
+TrimEnd()---> Removes last white spaces from string like "Mahfuz   " to "Mahfuz"
+ToLower() ---> Converts the strings to lowercase 
+ToUpper() ----> Converts the strings to Uppercase
+
+
+
+
+
+
+
+
 
 
