@@ -401,15 +401,6 @@ else
 
 
 
-----------------------------------------------------------------------------------------------
-Methods
-----------------------------------------------------------------------------------------------
-
-Trim() ----> Removes first and last white spaces from string like "  Mahfuz   " to "Mahfuz"
-TrimStart() --> Removes first white spaces from string like "  Mahfuz" to "Mahfuz"
-TrimEnd()---> Removes last white spaces from string like "Mahfuz   " to "Mahfuz"
-ToLower() ---> Converts the strings to lowercase 
-ToUpper() ----> Converts the strings to Uppercase
 
 
 
