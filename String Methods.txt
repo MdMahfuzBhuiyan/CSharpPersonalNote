@@ -4,4 +4,16 @@ TrimEnd()---> Removes last white spaces from string like "Mahfuz   " to "Mahfuz"
 ToLower() ---> Converts the strings to lowercase 
 ToUpper() ----> Converts the strings to Uppercase
 
+
 //We can use Multiples methods at the same time 
+string answer = "berlin";
+string input = Console.ReadLine(); 
+if (input.Trim().ToLower() == answer)
+    Console.WriteLine("Correct!");
+else
+    Console.WriteLine("Incorrect!");
+
+
+
+
+	

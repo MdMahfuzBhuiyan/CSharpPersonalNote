@@ -264,6 +264,13 @@ class CodeExamples
 }
 
 ----------------------------------------------------------------------------------------------
+Pre increament , Post  increament
+----------------------------------------------------------------------------------------------
+
+n++ means after assining or printing or doing any work it will increase
+++n means after increamenting then it it will do assining or printing or any work
+
+----------------------------------------------------------------------------------------------
 Control Statements
 ----------------------------------------------------------------------------------------------
 
@@ -398,8 +405,6 @@ else
     Console.WriteLine("Next time!");
 
 //(Uses when multiples dicticnt options , Enum types)
-
-
 
 
 
