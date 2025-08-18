@@ -41,7 +41,7 @@ class MahfuzBhuiyan
     }
 }
 --------------------------------------------------------------------------------------------
-Variables
+Datatypes & Variables
 --------------------------------------------------------------------------------------------
 
 // Declarition of Variables
@@ -70,14 +70,100 @@ class MahfuzBhuiyan
 }
 
 ----------------------------------------------------------------------------------------------
-Interpolated String
+String Interpolation , Concatination, fromatting
+----------------------------------------------------------------------------------------------
+int id = 10;
+int age = 24;
+string name = "Mahfuz";
+
+// String Concatination
+Console.WriteLine("The Sum of " + name + "'s id & age is " + (id + age));
+
+// String Interpolation
+Console.WriteLine($"The sum of {name}'s id & age is {id + age}");
+
+//String Formatting
+Console.WriteLine("The sum of {0}'s id & age is {1}", name, id + age);
+
+---------------------------------------------------------------------------------------------
+User Input
 ----------------------------------------------------------------------------------------------
 
+// Basic User input
 Console.WriteLine("Enter Your Name");
 // To store the input we need a varibale which is string , Cz C# only can get string input 
 string name = Console.ReadLine(); 
+Console.WriteLine("Hi " + name);
 
-Console.WriteLine($"Hi {name}"); // Interpolated String
+----------------------------------------------------------------------------------------------
+Casting, Parse Method, Convertion Method
+----------------------------------------------------------------------------------------------
+
+// Implicit casting
+
+int num = 10;
+int num2 = 20;
+// Implicit Casting, possible Cz int is lesser than double, double can hold more value than int
+double sum = num + num2;  
+Console.WriteLine(sum);
+double num3 = 12.5;
+double num4 = 13.6;
+// Here, Cannot implicitly convert double to int Cz, double has more data input capability than int
+int sum2 = num3 + num4; 
+Console.WriteLine(sum2);
+
+
+// Explicit Casting
+
+double num = 25.5;
+// Here possible Even if - int is lesser than double, double can hold more value than int
+int cast = (int)num; 
+Console.WriteLine(cast); 
+
+
+// Parse Method 
+
+// Only can convert String to other datatypes
+int num1 = int.Parse(Console.ReadLine());
+Console.WriteLine($"Your number is {num1}");
+
+
+// Convert  method
+
+// It can convert any datatype to other datatypes
+int name = 123;
+string name2 = Convert.ToString(name); // converting int to string
+Console.WriteLine(name2 + name2);
+
+
+
+// Casting → Reinterpret compatible types (no real transformation).
+
+// Parse → Convert string → target type (must be valid string).
+
+// Convert → General-purpose conversion across many types (with extra logic like rounding & null handling)
+
+
+----------------------------------------------------------------------------------------------
+Var keyword
+----------------------------------------------------------------------------------------------
+// Var Keyword
+var name = "Mahfuz";
+var age = 25;
+Console.WriteLine($"My name is {name} & I'm {age} years old");
+
+----------------------------------------------------------------------------------------------
+("", / , newline) inside the String
+----------------------------------------------------------------------------------------------
+
+// "" inside the String
+Console.WriteLine("I have \"20 corore\" bdt ");
+
+// (/) inside the String
+Console.WriteLine("You got 50\\100 marks ");
+
+// newline inside a string
+Console.WriteLine("Ok Google! \nYes Sir! How may I help you?");
 
 
 ----------------------------------------------------------------------------------------------
@@ -269,87 +355,5 @@ class CodeExamples
 
     }
 }
-
-----------------------------------------------------------------------------------------------
-User Input
-----------------------------------------------------------------------------------------------
-
-// Basic User input
-Console.WriteLine("Enter Your Name");
-// To store the input we need a varibale which is string , Cz C# only can get string input 
-string name = Console.ReadLine(); 
-// String Concatination only output as string , even if we use int or other data types
-Console.WriteLine("Hi " + name);
-
-----------------------------------------------------------------------------------------------
-Casting, Parse Method, Convertion Method
-----------------------------------------------------------------------------------------------
-
-// Implicit casting
-
-int num = 10;
-int num2 = 20;
-// Implicit Casting, possible Cz int is lesser than double, double can hold more value than int
-double sum = num + num2;  
-Console.WriteLine(sum);
-double num3 = 12.5;
-double num4 = 13.6;
-// Here, Cannot implicitly convert double to int Cz, double has more data input capability than int
-int sum2 = num3 + num4; 
-Console.WriteLine(sum2);
-
-
-// Explicit Casting
-
-double num = 25.5;
-// Here possible Even if - int is lesser than double, double can hold more value than int
-int cast = (int)num; 
-Console.WriteLine(cast); 
-
-
-// Parse Method 
-
-// Only can convert String to other datatypes
-int num1 = int.Parse(Console.ReadLine());
-Console.WriteLine($"Your number is {num1}");
-
-
-// Convert  method
-
-// It can convert any datatype to other datatypes
-int name = 123;
-string name2 = Convert.ToString(name); // converting int to string
-Console.WriteLine(name2 + name2);
-
-
-
-// Casting → Reinterpret compatible types (no real transformation).
-
-// Parse → Convert string → target type (must be valid string).
-
-// Convert → General-purpose conversion across many types (with extra logic like rounding & null handling)
-
-
-----------------------------------------------------------------------------------------------
-Var keyword
-----------------------------------------------------------------------------------------------
-// Var Keyword
-var name = "Mahfuz";
-var age = 25;
-Console.WriteLine($"My name is {name} & I'm {age} years old");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
