@@ -281,9 +281,68 @@ string name = Console.ReadLine();
 // String Concatination only output as string , even if we use int or other data types
 Console.WriteLine("Hi " + name);
 
-// Convert String to int while User input (Only Whole or integer number not double, float or other numbers)
+----------------------------------------------------------------------------------------------
+Casting, Parse Method, Convertion Method
+----------------------------------------------------------------------------------------------
+
+// Implicit casting
+
+int num = 10;
+int num2 = 20;
+// Implicit Casting, possible Cz int is lesser than double, double can hold more value than int
+double sum = num + num2;  
+Console.WriteLine(sum);
+double num3 = 12.5;
+double num4 = 13.6;
+// Here, Cannot implicitly convert double to int Cz, double has more data input capability than int
+int sum2 = num3 + num4; 
+Console.WriteLine(sum2);
+
+
+// Explicit Casting
+
+double num = 25.5;
+// Here possible Even if - int is lesser than double, double can hold more value than int
+int cast = (int)num; 
+Console.WriteLine(cast); 
+
+
+// Parse Method 
+
+// Only can convert String to other datatypes
 int num1 = int.Parse(Console.ReadLine());
 Console.WriteLine($"Your number is {num1}");
+
+
+// Convert  method
+
+// It can convert any datatype to other datatypes
+int name = 123;
+string name2 = Convert.ToString(name); // converting int to string
+Console.WriteLine(name2 + name2);
+
+
+
+// Casting → Reinterpret compatible types (no real transformation).
+
+// Parse → Convert string → target type (must be valid string).
+
+// Convert → General-purpose conversion across many types (with extra logic like rounding & null handling)
+
+
+----------------------------------------------------------------------------------------------
+Var keyword
+----------------------------------------------------------------------------------------------
+// Var Keyword
+var name = "Mahfuz";
+var age = 25;
+Console.WriteLine($"My name is {name} & I'm {age} years old");
+
+
+
+
+
+
 
 
 
